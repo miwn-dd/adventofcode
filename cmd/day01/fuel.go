@@ -1,4 +1,4 @@
-package day01
+package main
 
 import (
 	"bufio"
@@ -30,7 +30,7 @@ func calculateFuelForModule(moduleMass int) int {
 }
 
 // CalculateFuel calculates the fuel requirements for the entire ship
-func CalculateFuel() {
+func main() {
 	file, err := os.Open("../../resources/day01_masses.txt")
 
 	if err != nil {
